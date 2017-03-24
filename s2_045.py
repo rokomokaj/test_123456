@@ -27,16 +27,12 @@ def urlthread(url,headers):
             if "5246025" in r:
                 with open('detectresult', 'a') as detectresult:
                     detectresult.write(url+'\n')
-                    print "vulneravle:"+url
-            else:
-                    print "novulneravle:"+url
         except:
-            print "sorry:"+url
+            pass
 
         
 
 if __name__ == '__main__':
-    #detectresult=open("detectresult","a")
 
     if len(sys.argv) == 1:
 
